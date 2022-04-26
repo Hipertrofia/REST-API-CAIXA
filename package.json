@@ -1,0 +1,20 @@
+{
+  "name": "caixa-eletronico-api",
+  "version": "1.0.0",
+  "description": "api que simula o saque de um caixa eletrônico.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "saque",
+    "caixa",
+    "eletrônico",
+    "node"
+  ],
+  "author": "Jansen Pires",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.0"
+  }
+}
