@@ -24,6 +24,18 @@ router.get('/:id_saque', (req, res, next) =>{
     }
 }); 
 
+//realizando um saque
+router.post('/', (req, res, next) =>{
+    const saque ={
+        conta: req.body.conta,
+        valor_saque: req.body.valor_saque
+    }
+    res.status(201).send({
+        mensagem: 'saque realizado'
+    })
+})
+
+
 //faz um saque
 router.patch('/:valor_saque', (req, res, next) =>{
     const valor = req.params.valor_saque

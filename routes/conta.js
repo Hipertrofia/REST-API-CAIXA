@@ -14,7 +14,7 @@ router.get('/:id_conta', (req, res, next) =>{
     const id = req.params.id_conta
     if(id === 'especial'){
         res.status(200).send({
-            mensagem:'foi nesse dia aqui que vc poupou dinheiro',
+            mensagem:'Olha a sua conta... cheia de teia de aranha',
             id : id
         });
     } else {
@@ -24,8 +24,20 @@ router.get('/:id_conta', (req, res, next) =>{
     }
 }); 
 
+//abrindo conta
+router.post('/', (req, res, next) =>{
+    const conta ={
+        nome: req.body.nome,
+        saldo: req.body.saldo
+    }
+    res.status(201).send({
+        mensagem: 'Conta aberta'
+    })
+})
+
 //altera um valor na conta
 router.patch('/', (req, res, next) => {
+    
     res.status(202).send({
         mensagem:'Vamos movimentar essa conta'      
     });

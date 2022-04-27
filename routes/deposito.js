@@ -24,6 +24,18 @@ router.get('/:id_deposito', (req, res, next) =>{
     }
 }); 
 
+//depositando
+router.post('/', (req, res, next) =>{
+    const deposito ={
+        conta: req.body.conta,
+        depositoValor: req.body.depositoValor
+    }
+    res.status(201).send({
+        mensagem: 'Conta aberta'
+    })
+})
+
+
 //faz um depósito
 router.patch('/:valor_deposito', (req, res, next) =>{
     const valor = req.params.valor_deposito
