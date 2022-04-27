@@ -2,7 +2,7 @@ const express = require('express');
 const res = require('express/lib/response');
 const router = express.Router();
 
-//retorna todos os depósitos
+//retorna todos os depósitoss
 router.get('/', (req, res, next) =>{
     res.status(200).send({
         mensagem: 'vc depositou valorDeposito'
