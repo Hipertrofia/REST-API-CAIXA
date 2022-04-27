@@ -5,10 +5,10 @@ const bodyParser = require('body-parser');
 
 const rotaSaque = require('./routes/saque');
 const rotaDeposito = require('./routes/deposito');
-const rotaConta = require('./routes/conta');
+const rotaContas = require('./routes/contas');
 
 app.use(morgan('dev'));
-app.use(bodyParser.urlencoded({extended:false})); //somente dados simples 
+app.use(bodyParser.urlencoded({extended:false})) //somente dados simples 
 app.use(bodyParser.json()); //só json de entrada no body
 
 app.use((req, res, next) =>{
@@ -29,7 +29,7 @@ app.use((req, res, next) =>{
 
 app.use('/saque', rotaSaque);
 app.use('/deposito', rotaDeposito);
-app.use('/conta', rotaConta);
+app.use('/contas', rotaContas);
 
 
 //Erro de rota

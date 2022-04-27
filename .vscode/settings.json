@@ -1,3 +1,21 @@
 {
-    "cSpell.language": "en,pt,pt-BR"
+    "cSpell.language": "en,pt,pt-BR",
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MariaDB",
+            "name": "caixaEletronico-local",
+            "database": "caixaEletronico",
+            "username": "root",
+            "password": "root"
+        }
+    ],
+    "cSpell.words": [
+        "proprietario"
+    ]
 }
