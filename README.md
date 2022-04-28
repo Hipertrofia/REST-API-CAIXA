@@ -42,4 +42,6 @@ https://github.com/Hipertrofia/metodo-post-api-caixa
 
 Além de implementar corretamente o método do troco, respondendo a mensagem e o statos correto para as duas possibilidades de no método post para o saque, também podemos implementar a classe depósito e assim poderemos fazer o controle do saldo das contas. 
 
+Os testes unitários também precisam ser implementados. São um dos requisitos do descritivo do desafio, porém não havia como realiza-los a tempo útil, em especial pelo tempo que o if no POST do saque consumiu.  
+
 Também podemos implementar um front-end para api, a fim de torna-la funcional e melhorando as skills de front-end no processo. 👷
